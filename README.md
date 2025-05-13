@@ -35,17 +35,6 @@ Snowflake 是由 Twitter 提出的一種分散式 ID 生成演算法，其特點
 
 ---
 
-## 🛠️ 專案結構簡介
-
-```
-
-snowFlakeUtilProject
-├── SnowflakeUtil.java      # 雪花 ID 工具類
-├── Product.java            # 商品 Entity
-├── ProductService.java     # 建立商品時使用 Snowflake ID
-└── ...
-
-````
 
 ---
 
@@ -74,13 +63,6 @@ git clone https://github.com/kevin771203/snowFlakeUtilProject.git
 
 # 2. 使用 IntelliJ 或其他 IDE 開啟並執行 Spring Boot 專案
 ```
-
----
-
-## 📚 延伸學習
-
-* [Hutool 官方文件](https://hutool.cn/docs/#/)
-* [Snowflake 演算法說明（Wikipedia）](https://en.wikipedia.org/wiki/Snowflake_ID)
 
 ---
 
