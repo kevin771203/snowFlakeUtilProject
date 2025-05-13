@@ -1,5 +1,3 @@
-當然可以，以下是一份符合你需求的 `README.md` 範本，格式清楚、排版簡潔，並加上 Hutool 與 Snowflake 的簡介與使用方式：
-
 ---
 
 ```markdown
@@ -35,8 +33,6 @@ Snowflake 是由 Twitter 提出的一種分散式 ID 生成演算法，其特點
 
 ---
 
-
----
 
 ## ✨ 使用範例
 
