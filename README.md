@@ -35,16 +35,19 @@ Snowflake 是由 Twitter 提出的一種分散式 ID 生成演算法，其特點
 ## ✨ 使用範例
 
 ```java
-// 建立 Snowflake 實例（可放在工具類中）
-Snowflake snowflake = IdUtil.getSnowflake(1, 1); // workerId, datacenterId
+@Override
+    public Long createProduct(ProductRequest productRequest) {
+        Product product = new Product();
+        product.setProductId(idGenerator.generateId()); // 雪花 ID
+        product.setProductName(productRequest.getProductName());
+        product.setCategory(productRequest.getCategory());
+        product.setImageUrl(productRequest.getImageUrl());
+        product.setPrice(productRequest.getPrice());
+        product.setStock(productRequest.getStock());
+        product.setDescription(productRequest.getDescription());
 
-// 生成唯一 ID
-long id = snowflake.nextId();
-
-// 使用於建立商品時
-Product product = new Product();
-product.setId(id);
-product.setName("雪花生成測試商品");
+        return productDao.createProduct(product); //丟完整的 Product 給 DAO
+    }
 ````
 
 ---
