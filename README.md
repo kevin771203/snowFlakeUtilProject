@@ -1,6 +1,4 @@
----
 
-```markdown
 # ❄️ snowFlakeUtilProject
 
 基於 [Hutool](https://hutool.cn/) 實作的 **雪花片編碼工具專案**，以「建立商品（Product）」為範例，展示如何在 Spring Boot 專案中整合 **Snowflake ID 生成器**。
